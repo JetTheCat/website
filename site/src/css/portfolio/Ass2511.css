@@ -1,0 +1,66 @@
+.ass2511-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: none; /*lightgoldenrodyellow*/
+    text-align: center;
+    animation-name: popIn;
+    animation-iteration-count: 1;
+	animation-duration: 2s;
+}
+
+/*------------------------------------------------------------------------------------*/
+
+.ass2511-milestone {
+    text-decoration: underline;
+    font-size: 30px;
+}
+
+.ass2511-type {
+    width: 100%;
+    height: auto;
+    background-color: none; /*lightgreen*/
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.ass2511-box {
+    width: 80%;
+    height: auto;
+    background-color: none; /*lightpink*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ass2511-box p {
+    text-align: left;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.ass2511-box ul {
+    margin-bottom: 20px;
+}
+
+.ass2511-box li {
+    text-align: left;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+
+@keyframes popIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

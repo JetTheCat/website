@@ -1,0 +1,38 @@
+.time {
+    z-index: 1;
+    position: absolute;
+    font-size: 120px;
+    color: white;
+    text-shadow: 2px 2px 15px #303030;
+    top: 50%;
+    left:  50%;
+    -webkit-transform: translate(-50%, -50%); /* iOS */
+    transform: translate(-50%, -80%);
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 4s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+    .time {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 1280px) {
+    .time {
+        font-size: 70px;
+    }
+}
+

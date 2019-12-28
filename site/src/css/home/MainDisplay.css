@@ -1,0 +1,73 @@
+.home-display-container {
+    width: 100%;
+    height: 800px;
+    position: relative;
+    background-color: #DDD1D1;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.home-display-container img {
+    width: 100%;
+    height: 800px;
+    opacity: 1;
+	animation-name: fadeInOut;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+    animation-duration: 30s;
+    animation-fill-mode: forwards; /*forwards allows us to retain the animation set by the last keyframe*/
+}
+
+.home-display-container h2 {
+    z-index: 1;
+    position: absolute;
+    font-size: 68px;
+    color: white;
+    text-shadow: 2px 2px 15px #303030;
+    top: 30%;
+    left:  50%;
+    -webkit-transform: translate(-50%, -50%); /* iOS */
+    transform: translate(-50%, -90%);
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+    }
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInOut {
+	0% {
+		opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+	100% {
+		opacity: 0;
+	}
+}
+
+@media only screen and (max-width: 680px) {
+    .container {
+        height: 500px;
+    }
+
+    .container h2 {
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 1280px) {
+    .container h2 {
+        font-size: 50px;
+    }
+}
