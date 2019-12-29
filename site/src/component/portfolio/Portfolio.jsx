@@ -8,7 +8,7 @@ import Contact from "../global/Contact.jsx"
 class Portfolio extends React.Component {
     render() {
         return (
-            <div>
+            <div className="portfolio-content">
                 <Navbar />
                 <BannerDisplay />
                 <Projects />

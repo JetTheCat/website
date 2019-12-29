@@ -5,9 +5,9 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <div className="contact-box">
+            <footer className="contact-box">
                 
-            </div>
+            </footer>
         )
     }
 }

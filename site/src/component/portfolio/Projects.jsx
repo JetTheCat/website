@@ -6,12 +6,32 @@ class Projects extends React.Component {
 
     constructor() {
         super()
+        this.state = {
+            display: false
+        }
+
+        this.toggleProjectDisplay = this.toggleProjectDisplay.bind(this)
     }
 
+    toggleProjectDisplay() {
+        if(this.state.display) {
+            this.setState({
+                display: false
+            })
+        }
+        else {
+            this.setState({
+                display: true
+            })
+        }
+    }
+
+    
     render() {
         return (
             <div className="port-box">
-                <Ass2511 />
+                <button onClick={this.toggleProjectDisplay}>Projects</button>
+                    <Ass2511 status={this.state.display}/> 
             </div>
         )
     }

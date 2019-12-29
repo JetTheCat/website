@@ -1,13 +1,19 @@
-.ass2511-container {
+#ass2511-container {
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: column;
     background-color: none; /*lightgoldenrodyellow*/
     text-align: center;
-    animation-name: popIn;
-    animation-iteration-count: 1;
-	animation-duration: 2s;
+    overflow: hidden;
+    transition: max-height 2s ease;
+}
+
+.ass2511-open {
+    max-height: 5000px;
+}
+
+.ass2511-close {
+    max-height: 0px;
 }
 
 /*------------------------------------------------------------------------------------*/
@@ -57,6 +63,18 @@
 @keyframes popIn {
     0% {
         opacity: 0;
+        height: 0;
+    }
+    100% {
+        opacity: 1;
+        height: 5000px;
+    }
+}
+
+/*
+@keyframes popIn {
+    0% {
+        opacity: 0;
         transform: scale(0.5);
     }
     100% {
@@ -64,3 +82,4 @@
         transform: scale(1);
     }
 }
+*/

@@ -12,12 +12,16 @@ import mil3_1 from "../../img/mil3_1.png"
 
 class Ass2511 extends React.Component {
 
+    constructor(props) {
+        super()
+    }
+
     render() {
+        console.log(this.props.status)
         return (
-            <div className="ass2511-container">
+            <div id="ass2511-container" className={(this.props.status) ? "ass2511-open" : "ass2511-close"}>
 
                 <h1>Dungeon Game with Object Oriented Programming</h1>
-
                 <div className="ass2511-type">
                     <div className="ass2511-box">
                         <div>
@@ -40,7 +44,7 @@ class Ass2511 extends React.Component {
                                 towards creating the game application.
                             </p>
                         </div>
-            
+
                     </div>
                 </div>
 
@@ -95,7 +99,7 @@ class Ass2511 extends React.Component {
                     </div>
                 </div>
 
-                
+
                 <h2 className="ass2511-milestone">Milestone 3</h2>
                 <div className="ass2511-type">
                     <div className="ass2511-box">
