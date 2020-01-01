@@ -9,13 +9,13 @@
     -webkit-transform: translate(-50%, -50%); /* iOS */
     transform: translate(-50%, -80%);
     opacity: 1;
-	animation-name: fadeInOpacity;
+	animation-name: time-fadeInOpacity;
 	animation-iteration-count: 1;
 	animation-timing-function: ease-in;
 	animation-duration: 4s;
 }
 
-@keyframes fadeInOpacity {
+@keyframes time-fadeInOpacity {
 	0% {
 		opacity: 0;
     }
@@ -26,6 +26,8 @@
 
 @media only screen and (max-width: 680px) {
     .time {
+        width: 90%;
+        text-align: center;
         font-size: 55px;
     }
 }

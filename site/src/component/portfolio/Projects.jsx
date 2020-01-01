@@ -26,12 +26,12 @@ class Projects extends React.Component {
         }
     }
 
-    
     render() {
+        const text = (this.state.display) ? "Hide Projects" : "Show Projects"
         return (
-            <div className="port-box">
-                <button onClick={this.toggleProjectDisplay}>Projects</button>
-                    <Ass2511 status={this.state.display}/> 
+            <div className="proj-box">
+                <button className="proj-button" onClick={this.toggleProjectDisplay}>{text}</button>
+                <Ass2511 status={this.state.display}/> 
             </div>
         )
     }

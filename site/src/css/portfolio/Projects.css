@@ -1,12 +1,59 @@
-.port-box {
+.proj-box {
     width: 95%;
-    min-height: 600px;
+    min-height: 300px;
     height: auto;
     background-color: none;
     display: flex;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 }
 
+.proj-button {
+    width: 25%;
+    height: 60px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s ease 0s;
+}
+
+.proj-button:hover {
+    cursor: pointer;
+    width: 28%;
+    letter-spacing: 1px;
+    box-shadow: 0px 0px 25px #6C6C6C;
+    transition: all 0.4s ease 0s;
+}
+
+
+@media only screen and (max-width: 680px) {
+    .proj-button {
+        width: 80%;
+    }
+
+    .proj-button:hover {
+        width: 83%;
+    }
+}
+
+@media only screen and (min-width: 680px) and (max-width: 1280px) {
+    .proj-button {
+        width: 40%;
+    }
+
+    .proj-button:hover {
+        width: 43%;
+    }
+}

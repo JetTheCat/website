@@ -6,7 +6,7 @@ class BannerDisplay extends React.Component {
     constructor() {
         super()
         this.state = {
-            url: "https://source.unsplash.com/random/2000x400/?code,dark"
+            url: "https://source.unsplash.com/random/2000x500/?code,dark"
         }
     }
 

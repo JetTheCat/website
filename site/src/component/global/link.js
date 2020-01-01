@@ -5,13 +5,13 @@ const links = [
         description: "Home"
     },
     {
-        id: 3,
+        id: 2,
         link: "/portfolio",
         description: "Portfolio"
     },
     {
-        id: 4,
-        link: "/home",
+        id: 3,
+        link: "/contact",
         description: "Contact"
     },
 ]

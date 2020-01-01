@@ -12,7 +12,9 @@ class MainInfo extends React.Component {
         }
     }
 
-
+    scrollTop() {
+        window.scrollTo(0,0)
+    }
 
 
     render() {
@@ -31,7 +33,7 @@ class MainInfo extends React.Component {
                         with MIPS. Worked with PostgreSQL language for sql programming in databases as well. 
                     </p>
                     <h3>See more of my works at my Portfolio!</h3>
-                    <Link className="home-info-port-link" to="/portfolio">Portfolio</Link>
+                    <Link onClick={this.scrollTop} className="home-info-port-link" to="/portfolio">Portfolio</Link>
                 </div>
             </div>
         )

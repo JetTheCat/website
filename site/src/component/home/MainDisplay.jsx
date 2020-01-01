@@ -52,20 +52,28 @@ class MainDisplay extends React.Component {
         else 
             obj.newId = this.state.id + 1
 
-        obj.newURL = "https://source.unsplash.com/random/2000x800" + "/?" + topic[obj.newId]
+        const width = window.innerWidth
+        const height = window.innerHeight
+        const res = width + "x" + height
+
+        obj.newURL = "https://source.unsplash.com/random/" + res + "/?" + topic[obj.newId]
         
         return obj
     }
 
     
     componentDidMount(){
-        setInterval(() => {
+        this.imgRotate = setInterval(() => {
             this.setState({
                 url: this.getNewURL().newURL,
                 id: this.getNewURL().newId
             })
-        }, 30000)
+        }, 18000)
           
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.imgRotate)
     }
 
     // Replaying CSS animation explanation
