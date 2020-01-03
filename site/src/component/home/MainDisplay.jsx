@@ -6,8 +6,14 @@ class MainDisplay extends React.Component {
 
     constructor() {
         super()
+
+        const width = window.innerWidth
+        const height = window.innerHeight
+        const res = width + "x" + height
+        const newURL = "https://source.unsplash.com/random/" + res
+
         this.state = {
-            url: "https://source.unsplash.com/random/2000x800",
+            url: newURL,
             id: 0,
         }
     }
