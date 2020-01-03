@@ -2,3 +2,6 @@ So apparently the run build script failed on netlify because some random install
 into the node_module package corrupted the build. Hence if you/myself ever face this issue 
 again delete node modules and do a "npm install" and "npm install react-router-dom" again
 cause I spent hours fixing a dumbshit issue that only took a minute to fix.
+
+Useful Link for deploying react app to netlify:
+https://dev.to/easybuoy/deploying-react-app-from-github-to-netlify-3a9j
