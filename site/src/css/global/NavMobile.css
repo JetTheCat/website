@@ -34,7 +34,7 @@
 }
 
 #nav-mobile-content {
-    position: absolute;
+    position: fixed;
     z-index: 100;
     top: 65px;
     width: 100%;

@@ -9,10 +9,6 @@ import "../../css/contact/Contact.css"
 
 class Contact extends React.Component {
 
-//<a target="_blank" href="https://icons8.com/icons/set/facebook-new">Facebook icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-//<a target="_blank" href="https://icons8.com/icons/set/gmail">Gmail icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-//<a target="_blank" href="https://icons8.com/icons/set/linkedin--v2">LinkedIn icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
-//<a target="_blank" href="https://icons8.com/icons/set/instagram-new">Instagram icon</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
     constructor() {
         super()
         this.state = {
